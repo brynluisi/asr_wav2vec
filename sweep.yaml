@@ -1,0 +1,47 @@
+program: asr_wav2vec/asr_wav2vec.py
+method: bayes
+metric:
+  goal: minimize
+  name: test_wer
+parameters:
+  weight_decay:
+    max: 0.01
+    min: 0
+    distribution: uniform
+  warmup_steps:
+    max: 2000
+    min: 500
+    distribution: int_uniform
+  adam_beta1:
+    max: 0.95
+    min: 0.85
+    distribution: uniform
+  adam_beta2:
+    max: 0.99
+    min: 0.97
+    distribution: uniform
+  adam_epsilon:
+    max: 1e-6
+    min: 1e-8
+    distribution: uniform
+  gradient_accumulation_steps:
+    max: 2
+    min: 1
+    distribution: int_uniform
+  attention_dropout:
+    max: 0.1
+    min: 0.0
+    distribution: uniform
+  hidden_dropout:
+    max: 0.1
+    min: 0.0
+    distribution: uniform
+  feat_proj_dropout:
+    max: 0.1
+    min: 0.0
+    distribution: uniform
+  layerdrop:
+    max: 0.1
+    min: 0.0
+    distribution: uniform
+

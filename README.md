@@ -49,6 +49,5 @@ The script logs results using [Weights & Biases](https://wandb.ai/), including:
 
 ## Acknowledgments
 
-This implementation uses the Hugging Face Wav2Vec2 model and [Vercelloti](https://media.
-talkbank.org/slabank/English/Vercellotti) dataset.
+This implementation uses the Hugging Face Wav2Vec2 model and [Vercelloti](https://media.talkbank.org/slabank/English/Vercellotti) dataset.
 
